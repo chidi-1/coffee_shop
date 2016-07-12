@@ -2625,9 +2625,9 @@ function checkRequiredFields($form, requiredFields, validCallback) {
         });
         $(document).on('scroll', function () {
             if ($('body').scrollTop() >= 300) {
-                $('.fixed-header').slideDown();
+                $('.header-wrap').addClass('slided');
             } else {
-                $('.fixed-header').slideUp();
+                $('.header-wrap').removeClass('slided');
             }
         });
         $('.js-tab').on('click', function () {
